@@ -6,7 +6,7 @@ body {
 }
 @font-face {
     font-family: 'Gilroy-Regular';
-    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    src: url('fonts/Gilroy-Regular.ttf') format('truetype');
 }
 .container {
     align-items: center;
