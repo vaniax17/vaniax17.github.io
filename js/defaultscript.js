@@ -35,15 +35,14 @@ document.addEventListener('DOMContentLoaded', function() {
     changeSection(initialSection, initialButton);
 });
 // Функция для обновления данных с API
-// Функция для обновления данных с API
 async function updateStats() {
     try {
-        // Замените http на https
-        const response = await fetch('http://46.174.48.53:3254/stats'); // URL вашего Flask-сервера
+        // Заменяем http на https, если ваш сервер поддерживает SSL
+        const response = await fetch('https://46.174.48.53:3254/stats'); // URL вашего Flask-сервера по HTTPS
         if (!response.ok) {
             throw new Error('Сетевая ошибка: ' + response.status);
         }
-        
+
         const data = await response.json();
 
         // Отладочная информация
