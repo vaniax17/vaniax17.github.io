@@ -26,7 +26,7 @@ function changeSection(sectionName, linkElement) {
 }
 
 function redirectTo(url) {
-    window.location.href = `redirect.html?url=${encodeURIComponent(url)}`;
+    window.location.href = `redirect?url=${encodeURIComponent(url)}`;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
