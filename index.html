@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vaniax17 | Главная</title>
+    <link rel="icon" href="icons/logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/defaultstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="./js/defaultscript.js"></script>
+</head>
+<body>
+    <div class="button-container">
+        <a href="javascript:void(0);" id="home" class="button active" onclick="changeSection('Главная', this)">Главная</a>
+        <a href="javascript:void(0);" id="links" class="button" onclick="changeSection('Ссылки', this)">Ссылки</a>
+        <a href="javascript:void(0);" id="ds-server" class="button" onclick="changeSection('Дс сервер', this)">Дс сервер</a>
+    </div>
+
+    <div class="content">
+        <div id="Главная" class="section active">
+            <div class="welcome-button">
+                Добро пожаловать
+            </div>
+            <div class="info-box">
+                Немного о себе: <br>
+                Майнкрафтер, роблоксер, <br>Изучаю языки программирования: <br> CSS, HTML, JS, PYTHON, JAVA,<br> И их библиотеки: <br>AIOGRAM, DISCORD.PY
+                
+            </div>
+        </div>
+
+        <div id="Ссылки" class="section">
+            <div class="info-box">
+                В этом разделе можно найти: <br>
+                - соцсети и ссылки на <br>различные сервисы.
+            </div>
+            <div class="links-container">
+                <a href="javascript:void(0);" class="link-box" onclick="redirectTo('https://t.me/vaniax17')">
+                    <img src="icons/telegram_icon.png" alt="Telegram"> ТЕЛЕГРАМ
+                </a>
+                <a href="javascript:void(0);" class="link-box" onclick="redirectTo('https://docs.google.com/document/d/1ilfX8o6JZFzRTTr1MmpgBVsTnND900q_Bg4Wmg5EHuY/edit?usp=sharing')">
+                    <img src="icons/devices_icon.png" alt="Devices"> ДЕВАЙСЫ
+                </a>
+                <a href="javascript:void(0);" class="link-box" onclick="redirectTo('https://steamcommunity.com/id/vaniax17official/')">
+                    <img src="icons/steam_icon.png" alt="Steam"> СТИМ
+                </a>
+                <a href="javascript:void(0);" class="link-box" onclick="redirectTo('https://vk.com/vaniax17')">
+                    <img src="icons/vk_icon.png" alt="VK"> ВК
+                </a>
+            </div>
+        </div>
+
+        <div id="Дс сервер" class="section">
+            <div class="discord-server-box">
+                <img src="./icons/psq_community_logo.png" alt="PSQ Community Games" class="server-logo">
+                <a href="javascript:void(0);" class="server-link"onclick="redirectTo('https://discord.gg/hE72dZV8')"> PSQ Community Games</a>
+                <a href="javascript:void(0);" class="server-join-button" onclick="redirectTo('https://discord.gg/hE72dZV8')">Вступить</a>
+            </div>     
+            <div class="info-box">
+                <h1>Статистика Discord</h1>
+                <p>Пользователи в голосовых каналах: <span id="voiceCount">0</span></p>
+                <p>Пользователи онлайн: <span id="onlineCount">0</span></p>
+            </div>
+        </div>
+        
+    </div>
+
+
+<footer>
+    Версия сайта: 0.2
+</footer>
+</body>
+</html>
