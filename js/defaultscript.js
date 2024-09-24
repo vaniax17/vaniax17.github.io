@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
     changeSection(initialSection, initialButton);
 });
 // Функция для обновления данных с API
+// Функция для обновления данных с API
 async function updateStats() {
     try {
-        // Замените http на https
         const response = await fetch('http://46.174.48.53:3254/stats'); // URL вашего Flask-сервера
         if (!response.ok) {
             throw new Error('Сетевая ошибка: ' + response.status);
@@ -55,6 +55,13 @@ async function updateStats() {
         console.error('Ошибка при получении данных:', error);
     }
 }
+
+// Обновление данных каждые 30 секунд
+setInterval(updateStats, 30000);
+
+// Обновляем данные сразу при загрузке страницы
+window.onload = updateStats;
+
 
 
 // Обновление данных каждые 30 секунд
