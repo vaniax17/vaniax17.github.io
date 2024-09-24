@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 async function updateStats() {
     try {
         // Замените http на https
-        const response = await fetch('http://46.174.48.53:3254/stats'); // URL вашего Flask-сервера
+        const response = await fetch('https://46.174.48.53:3254/stats'); // URL вашего Flask-сервера
         if (!response.ok) {
             throw new Error('Сетевая ошибка: ' + response.status);
         }
