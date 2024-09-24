@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Rimma_sans';
-    src: url('../fonts/font.ttf') format('truetype');
+    src: url('fonts/font.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Gilroy-Regular';
-    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    src: url('fonts/Gilroy-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Gilroy-Medium';
-    src: url('../fonts/GILROY-MEDIUM.TTF') format('truetype');
+    src: url('fonts/GILROY-MEDIUM.TTF') format('truetype');
 }
 body {
     font-family: 'Rimma_sans', Arial, sans-serif;
